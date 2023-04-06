@@ -1,0 +1,48 @@
+tool_box: "TyMachinelearning"
+class: "Classification"
+sub_class: "DecisionTree"
+
+function: 
+  name: "fitctree"
+  short_description: "Fit binary decision tree for multiclass classification"
+
+usages: 
+  - usage: "returns a fitted binary classification decision tree based on the input variables (also known as predictors, features, or attributes) contained in the table Tbl and output (response or labels) contained in Tbl.ResponseVarName. The returned binary tree splits branching nodes based on the values of a column of Tbl."
+    outputs: 
+      - name: "tree"
+      # - name: "mdl"
+    inputs: 
+      - name: "Tbl"
+      - name: "ResponseVarName"
+  - usage: "returns a fitted binary classification decision tree based on the input variables contained in the table Tbl. formula is an explanatory model of the response and a subset of predictor variables in Tbl used to fit tree."
+    outputs: 
+      - name: "tree"
+      # - name: "mdl"
+    inputs: 
+      - name: "Tbl"
+      - name: "formula"
+
+examples:
+  - example:
+    name: Grow a Classification Tree
+  - example:
+    name: Control Tree Depth
+
+inputs:
+  - arg: "Tbl"
+    short_description: "Sample data"
+    long_description: "Sample data used to train the model, specified as a table. Each row of Tbl corresponds to one observation, and each column corresponds to one predictor variable. Optionally, Tbl can contain one additional column for the response variable. Multicolumn variables and cell arrays other than cell arrays of character vectors are not allowed."
+    type: "table"
+    type_zh: "table"
+  - arg: "ResponseVarName"
+    short_description: "Response variable name"
+    long_description: "Response variable name, specified as the name of a variable in Tbl."
+    type: "char | string"
+    type_zh: "name of variable in Tbl"
+
+outputs:
+  - arg: "tree"
+    short_description: "Classification tree"
+    long_description: "Classification tree, returned as a classification tree object."
+    type: ""
+    type_zh: "classification tree object"
