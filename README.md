@@ -2,7 +2,7 @@
 
 ## 安装
 
-1. 克隆本仓库
+1. 克隆本仓库 `git clone https://github.com/peacemo/DocHelper.git`
 
 2. 运行 `pip install -r requirements.txt`
 
