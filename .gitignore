@@ -1,1 +1,5 @@
 *tuto.md*
+/configs/*
+/outputs/*
+!/configs/example.yml
+!/outputs/example.md

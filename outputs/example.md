@@ -89,6 +89,9 @@ mdl, = AdaboostTree(X, n_estimators, learn_rate, )
 </div>
 
 
+{% if  %}
+
+{% endif %}
 ## 输出参数
 
 <div id="mdl" class="jump-target"></div>

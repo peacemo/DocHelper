@@ -1,7 +1,7 @@
 import yaml
 from jinja2 import Template
 
-config_name = "template"
+config_name = "example"
 # Load and parse the YAML file
 with open(f"./configs/{config_name}.yml") as f:
     data = yaml.safe_load(f)
