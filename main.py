@@ -2,7 +2,7 @@ import os
 import yaml
 from jinja2 import Template
 
-config_name = "testckfold"
+config_name = "example"
 
 if os.path.exists(f"./outputs/{config_name}.md"):
     go_on = input(f"文件: ./outputs/{config_name}.md 已存在，继续执行将覆盖此文件[y/n]: ")
