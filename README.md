@@ -8,16 +8,14 @@
 
 ## 使用
 
-必需以下文件
+必需以下文件：
 
 * ./config/<config_name>.yml
 * ./template_doc.md
 
-使用之前，在 `main.py` 中修改 `config_name` 为目标文件名，使用 `python ./main.py` 运行。
+yml 格式的模板位于 `./config/template.yml`， 依照模板修改其中的变量即可。
 
-yml 格式的模板在 `./config/template.yml`， 依照模板修改其中的变量即可。
-
-运行 `python main.py` 以生成文档。
+运行 `python main.py [YAML 文件名]` 以生成文档。例如 `python main.py "example"`
 
 默认输出与 yml 配置文件同名的 md 文档。
 
