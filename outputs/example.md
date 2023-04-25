@@ -5,15 +5,19 @@
 ## 语法
 
 ```julia
-
-mdl, = AdaboostTree(X, n_estimators, learn_rate, )
-
+mdl, = AdaboostTree(X, )
+mdl, = AdaboostTree(X, Name=Value, )
 ```
 
 ## 说明
- 
 
-[mdl](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#mdl), = AdaboostTree([X](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#X), [n_estimators](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#n_estimators), [learn_rate](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#learn_rate), ) 返回基于输入数据 X 和弱模型基数 n_estimators 的阿达分类树模型。
+[mdl](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#mdl), = AdaboostTree([X](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#X), ) 返回基于输入数据 X 和弱模型基数 n_estimators 的阿达分类树模型。如果文字需要换行，使用 `\n\n` 
+
+来进行换行。
+*****
+
+[mdl](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#mdl), = AdaboostTree([X](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#X), [Name=Value](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#名称-值对组参数), ) 返回基于输入数据 X 和弱模型基数 n_estimators 的阿达分类树模型。
+*****
 
 ## 示例
 
@@ -24,7 +28,7 @@ mdl, = AdaboostTree(X, n_estimators, learn_rate, )
 </details>
 <div class="details-content">
 
-示例内容
+示例内容，使用 *Markdown* 格式文本进行编写。
 
   </div>
 </div>
@@ -46,10 +50,18 @@ mdl, = AdaboostTree(X, n_estimators, learn_rate, )
   </div>
 </div>
 
+
+### 名称-值对组参数
+
+指定可选的、以逗号分隔的 Key=Value 对组参数。Key 为参数名称，Value 为对应的值。您可采用任意顺序指定多个名称-值对组参数，如 Key1=Value1,...,KeyN=ValueN 所示。
+
+**示例：**
+
+
 <div id="n_estimators" class="jump-target"></div>
 <div class="details-box">
 <details open>
-<summary>n_estimators - 弱模型基数<div>数值</div></summary>
+<summary>n_estimators - 弱模型基数<div>12 （默认） | 数值</div></summary>
 </details>
 <div class="details-content">
 
@@ -63,7 +75,7 @@ mdl, = AdaboostTree(X, n_estimators, learn_rate, )
 <div id="max_depth" class="jump-target"></div>
 <div class="details-box">
 <details open>
-<summary>max_depth - 模型最大深度<div>数值</div></summary>
+<summary>max_depth - 模型最大深度<div>9 （默认） | 数值</div></summary>
 </details>
 <div class="details-content">
 
@@ -77,7 +89,7 @@ mdl, = AdaboostTree(X, n_estimators, learn_rate, )
 <div id="min_samples_leaf" class="jump-target"></div>
 <div class="details-box">
 <details open>
-<summary>min_samples_leaf - 模型最小枝叶<div>数值</div></summary>
+<summary>min_samples_leaf - 模型最小枝叶<div>1 （默认） | 数值</div></summary>
 </details>
 <div class="details-content">
 
@@ -87,6 +99,7 @@ mdl, = AdaboostTree(X, n_estimators, learn_rate, )
 
   </div>
 </div>
+
 
 
 ## 输出参数

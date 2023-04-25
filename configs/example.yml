@@ -1,42 +1,60 @@
-tool_box: "TyMachinelearning"
-class: "Classification"
-sub_class: "Classifierensemble"
+tool_box: "TyMachinelearning"  # 工具箱的名称
+class: "Classification"  # 大分类
+sub_class: "Classifierensemble"  # 小分类
+# sub_sub_class: "....."  # 小小分类
 
 function: 
-  name: "AdaboostTree"
-  short_description: "阿达分类树模型"
+  name: "AdaboostTree"  # 函数的名称
+  short_description: "阿达分类树模型"  # 函数的简短介绍（位于网页首部函数名下方的小字）
 
-usages: 
+usages:  # 函数的调用方式，可以有多个，使用 - usage 分隔
+  - usage: "返回基于输入数据 X 和弱模型基数 n_estimators 的阿达分类树模型。如果文字需要换行，使用 `\\n\\n` \n\n来进行换行。"  # 使用方式说明，位于说明栏目的表达式后面的文字说明
+    outputs:  # 输出参数，可以有多个，使用 - name 分隔
+      - name: "mdl"  # 参数的名称
+      # - name: "mdl"
+    inputs:  # 输入参数，可以有多个，使用 - name 分割
+      - name: "X"
   - usage: "返回基于输入数据 X 和弱模型基数 n_estimators 的阿达分类树模型。"
     outputs: 
       - name: "mdl"
       # - name: "mdl"
     inputs: 
       - name: "X"
-      - name: "n_estimators"
-      - name: "learn_rate"
+      - name: "Name=Value"
 
-examples:
-  - example:
-    name: 训练判别分析模型
+examples:  # 用例，可以有多个，使用 - example 分隔
+  - example:  # 一个用例
+    name: 训练判别分析模型  # 用例的标题
+  # - example: 
+  #   name: 后续的用例
 
-inputs:
-  - arg: "X"
-    short_description: "预测数据"
-    long_description: "预测数据，指定为Dataframe。X 的每一行对应一个观测值，每一列对应一个预测变量。最后一行为标签。"
-    type: "Dataframe"
-    type_zh: "Dataframe"
+inputs:  # 输入参数的详细解释，可以有多个，使用 - arg 分隔
+  - arg: "X"  # 参数名称
+    short_description: "预测数据"  # 简介（在网页中对应参数后面紧接着的简短解释：**X - 预测数据**）
+    long_description: "预测数据，指定为Dataframe。X 的每一行对应一个观测值，每一列对应一个预测变量。最后一行为标签。"  # 详细介绍
+    type: "Dataframe"  # 显示在介绍栏目底部的数据类型
+    type_zh: "Dataframe"  # 显示在标题下面的数据类型（一般用中文表示）
+  # - arg: "..."
+  #   short_description: "..."
+  #   long_description: "..."
+  #   type: "..."
+  #   type_zh: "..."
+
+name_value:  # 名称-值对组参数，可以有多个，使用 - arg 来分隔
   - arg: "n_estimators"
+    default: 12  # 默认值
     short_description: "弱模型基数"
     long_description: "对应弱模型的基数数量。"
     type: "Int64"
     type_zh: "数值"
   - arg: "max_depth"
+    default: 9
     short_description: "模型最大深度"
     long_description: "最大深度默认值为9"
     type: "Int64"
     type_zh: "数值"
   - arg: "min_samples_leaf"
+    default: 1
     short_description: "模型最小枝叶"
     long_description: "模型最小枝叶默认值为1"
     type: "Int64"
@@ -48,3 +66,8 @@ outputs:
     long_description: "经过训练的判别分析分类模型，作为分类判别模型对象返回。"
     type: ""
     type_zh: "判别分析对象"
+  # - arg: "..."
+  #   short_description: "..."
+  #   long_description: "..."
+  #   type: ""
+  #   type_zh: "..."
