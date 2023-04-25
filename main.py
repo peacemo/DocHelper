@@ -1,8 +1,15 @@
 import os
+import argparse
 import yaml
 from jinja2 import Template
 
-config_name = "example"
+parser = argparse.ArgumentParser()
+parser.add_argument("file_name", type=str, default="example", nargs="?",
+                    help="The target YMAL FILE NAME to produce documentation. (default: example ymal file)")
+args = parser.parse_args()
+
+print(f"需要处理的文件为: {args.file_name}")
+config_name = args.file_name
 
 if os.path.exists(f"./outputs/{config_name}.md"):
     go_on = input(f"文件: ./outputs/{config_name}.md 已存在，继续执行将覆盖此文件[y/n]: ")
