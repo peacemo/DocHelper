@@ -8,7 +8,7 @@ parser.add_argument("file_name", type=str, default="example", nargs="?",
                     help="The target YMAL FILE NAME to produce documentation. (default: example ymal file)")
 args = parser.parse_args()
 
-print(f"需要处理的文件为: {args.file_name}")
+print(f"需要处理的文件为: {args.file_name}.yml")
 config_name = args.file_name
 
 if os.path.exists(f"./outputs/{config_name}.md"):
@@ -31,3 +31,5 @@ with open("./template_doc.md") as f:
 # Write the output to a Markdown file
 with open(f"./outputs/{config_name}.md", "w") as f:
     f.write(output)
+
+print(f"./outputs/{config_name}.md 生成成功")
