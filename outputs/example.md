@@ -6,7 +6,7 @@
 
 ```julia
 mdl, = AdaboostTree(X, )
-mdl, = AdaboostTree(X, Name=Value, )
+mdl, = AdaboostTree(____, Name=Value, )
 ```
 
 ## 说明
@@ -16,7 +16,7 @@ mdl, = AdaboostTree(X, Name=Value, )
 来进行换行。
 *****
 
-[mdl](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#mdl), = AdaboostTree([X](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#X), [Name=Value](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#名称-值对组参数), ) 返回基于输入数据 X 和弱模型基数 n_estimators 的阿达分类树模型。
+[mdl](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#mdl), = AdaboostTree([____](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#输入参数), [Name=Value](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#名称-值对组参数), ) 返回基于输入数据 X 和弱模型基数 n_estimators 的阿达分类树模型。
 *****
 
 ## 示例

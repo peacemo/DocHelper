@@ -10,7 +10,7 @@
 
 ## 说明
 {% for usage in usages %}
-{% for name in usage.outputs %}[{{ name.name }}](/Doc/{{ tool_box }}/{{ class }}/{{ sub_class }}/{{ function.name }}.html#{{ name.name }}), {% endfor %}= {{ function.name }}({% for name in usage.inputs %}[{{ name.name }}](/Doc/{{ tool_box }}/{{ class }}/{{ sub_class }}/{{ function.name }}.html#{% if name.name=="Name=Value"%}{{ "名称-值对组参数" }}{% else %}{{ name.name }}{% endif %}), {% endfor %}) {{ usage.usage }}
+{% for name in usage.outputs %}[{{ name.name }}](/Doc/{{ tool_box }}/{{ class }}/{{ sub_class }}/{{ function.name }}.html#{{ name.name }}), {% endfor %}= {{ function.name }}({% for name in usage.inputs %}[{{ name.name }}](/Doc/{{ tool_box }}/{{ class }}/{{ sub_class }}/{{ function.name }}.html#{% if name.name=="Name=Value"%}{{ "名称-值对组参数" }}{% elif name.name=="____" %}{{ "输入参数" }}{% else %}{{ name.name }}{% endif %}), {% endfor %}) {{ usage.usage }}
 *****
 {% endfor %}
 ## 示例

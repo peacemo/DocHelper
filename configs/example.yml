@@ -18,9 +18,9 @@ usages:  # 函数的调用方式，可以有多个，使用 - usage 分隔
     outputs: 
       - name: "mdl"
       # - name: "mdl"
-    inputs: 
-      - name: "X"
-      - name: "Name=Value"
+    inputs:  # 名称-值对参数的格式，第一个参数为四个下划线 "____", 第二个参数为 "Name=Value"，不需更改
+      - name: "____"  
+      - name: "Name=Value"  
 
 examples:  # 用例，可以有多个，使用 - example 分隔
   - example:  # 一个用例
