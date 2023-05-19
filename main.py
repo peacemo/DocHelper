@@ -20,16 +20,16 @@ if os.path.exists(f"./outputs/{config_name}.md"):
         exit()
 
 # Load and parse the YAML file
-with open(f"./configs/{config_name}.yml") as f:
+with open(f"./configs/{config_name}.yml", encoding='utf-8') as f:
     data = yaml.safe_load(f)
 
 # Load and render the template file
-with open("./template_doc.md") as f:
+with open("./template_doc.md", encoding='utf-8') as f:
     template = Template(f.read())
     output = template.render(data)
 
 # Write the output to a Markdown file
-with open(f"./outputs/{config_name}.md", "w") as f:
+with open(f"./outputs/{config_name}.md", "w", encoding='utf-8') as f:
     f.write(output)
 
 print(f"./outputs/{config_name}.md 生成成功")
