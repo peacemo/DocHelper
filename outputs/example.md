@@ -1,30 +1,30 @@
-# AdaboostTree
+# function_name
 ---
-阿达分类树模型
+这是一个函数
 
 ## 语法
 
 ```julia
-mdl, = AdaboostTree(X, )
-mdl, = AdaboostTree(____, Name=Value, )
+output_0, = function_name(input_0, )
+output_0, = function_name(____, Name=Value, )
 ```
 
 ## 说明
 
-[mdl](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#mdl), = AdaboostTree([X](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#X), ) 返回基于输入数据 X 和弱模型基数 n_estimators 的阿达分类树模型。如果文字需要换行，使用 `\n\n` 
+[output_0](/Doc/ToolBoxName/ClassName/SubClassName/function_name.html#output_0), = function_name([input_0](/Doc/ToolBoxName/ClassName/SubClassName/function_name.html#input_0), ) 这个函数的详细介绍就写在这里，对应的就是网页版本中，说明栏目每一个用法后面的详细文字说明。如果文字需要换行，使用 `\n\n` 来进行换行。
 
-来进行换行。
+比如说这样。
 *****
 
-[mdl](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#mdl), = AdaboostTree([____](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#输入参数), [Name=Value](/Doc/TyMachinelearning/Classification/Classifierensemble/AdaboostTree.html#名称-值对组参数), ) 返回基于输入数据 X 和弱模型基数 n_estimators 的阿达分类树模型。
+[output_0](/Doc/ToolBoxName/ClassName/SubClassName/function_name.html#output_0), = function_name([____](/Doc/ToolBoxName/ClassName/SubClassName/function_name.html#输入参数), [Name=Value](/Doc/ToolBoxName/ClassName/SubClassName/function_name.html#名称-值对组参数), ) 这个说明只是一个示例，现在是第二种用法的说明。这里就介绍一下 `Name=Value` 的配置规范。
 *****
 
 ## 示例
 
-<div id="训练判别分析模型" class="jump-target"></div>
+<div id="用例的标题" class="jump-target"></div>
 <div class="details-box">
 <details open>
-<summary>训练判别分析模型</summary>
+<summary>用例的标题</summary>
 </details>
 <div class="details-content">
 
@@ -36,16 +36,16 @@ mdl, = AdaboostTree(____, Name=Value, )
 
 ## 输入参数
 
-<div id="X" class="jump-target"></div>
+<div id="input_0" class="jump-target"></div>
 <div class="details-box">
 <details open>
-<summary>X - 预测数据<div>Dataframe</div></summary>
+<summary>input_0 - 第一个输入参数<div>一个类型</div></summary>
 </details>
 <div class="details-content">
 
-预测数据，指定为Dataframe。X 的每一行对应一个观测值，每一列对应一个预测变量。最后一行为标签。
+这里是第一个参数的详细文字介绍，这里的参数和上面 `usages -> usage -> inputs -> name` 里面的参数一致哈。
 
-**数据类型:**  Dataframe
+**数据类型:**  AType
 
   </div>
 </div>
@@ -58,24 +58,24 @@ mdl, = AdaboostTree(____, Name=Value, )
 **示例：**
 
 
-<div id="n_estimators" class="jump-target"></div>
+<div id="arg_0" class="jump-target"></div>
 <div class="details-box">
 <details open>
-<summary>n_estimators - 弱模型基数<div>12 （默认） | 数值</div></summary>
+<summary>arg_0 - 可选参数0<div>12 （默认） | 数值</div></summary>
 </details>
 <div class="details-content">
 
-对应弱模型的基数数量。
+这里是第一个参数的详细文字介绍，我知道，世界上有 25% 的鸡翅来自于 M826 小行星，而其中 1.3% 的翅根流向了 McDxxxxd's，而在这其中，有 99.9% 的鸡翅成为了中国限定的麦辣鸡翅。
 
 **数据类型:**  Int64
 
   </div>
 </div>
 
-<div id="max_depth" class="jump-target"></div>
+<div id="arg_1" class="jump-target"></div>
 <div class="details-box">
 <details open>
-<summary>max_depth - 模型最大深度<div>9 （默认） | 数值</div></summary>
+<summary>arg_1 - 可选参数1<div>9 （默认） | 数值</div></summary>
 </details>
 <div class="details-content">
 
@@ -86,32 +86,18 @@ mdl, = AdaboostTree(____, Name=Value, )
   </div>
 </div>
 
-<div id="min_samples_leaf" class="jump-target"></div>
-<div class="details-box">
-<details open>
-<summary>min_samples_leaf - 模型最小枝叶<div>1 （默认） | 数值</div></summary>
-</details>
-<div class="details-content">
-
-模型最小枝叶默认值为1
-
-**数据类型:**  Int64
-
-  </div>
-</div>
-
 
 
 ## 输出参数
 
-<div id="mdl" class="jump-target"></div>
+<div id="output_0" class="jump-target"></div>
 <div class="details-box">
 <details open>
-<summary>mdl - 输出值<div>判别分析对象</div></summary>
+<summary>output_0 - 输出值<div>数据类型</div></summary>
 </details>
 <div class="details-content">
 
-经过训练的判别分析分类模型，作为分类判别模型对象返回。
+这里是第一个参数的详细文字介绍，这里的参数和上面 `usages -> usage -> outputs -> name` 里面的参数一致。
 
   </div>
 </div>
